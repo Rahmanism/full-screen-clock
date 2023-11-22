@@ -7,9 +7,7 @@ function padder(number) {
 }
 
 function updateClock() {
-  const date = new Date()
-  console.log('⌚ date:', date)
-  console.log('⏰ local date:', date.toLocaleTimeString())
+  let date = new Date()
   const hour = date.getHours()
   const minute = date.getMinutes()
   const second = date.getSeconds()
@@ -19,4 +17,5 @@ function updateClock() {
   secondElem.innerHTML = padder(second)
 }
 
+updateClock()
 setInterval(updateClock, 1000)
