@@ -1,7 +1,7 @@
 @font-face {
   font-family: clock-font;
   src: local('☺'), local('Sitka Display'),
-    url('/fonts/SitkaVF.ttf') format('truetype');
+    url('../fonts/SitkaVF.ttf') format('truetype');
   font-weight: normal;
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: clock-font;
   src: local('☺'), local('Sitka Display'),
-    url('/fonts/SitkaVF.ttf') format('truetype');
+    url('../fonts/SitkaVF.ttf') format('truetype');
   font-weight: bolder;
   font-display: swap;
 }
