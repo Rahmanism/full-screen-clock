@@ -1,19 +1,22 @@
 @font-face {
   font-family: clock-font;
-  src: local("☺"),local("Sitka Display"),url("/fonts/SitkaVF.ttf") format("truetype");
+  src: local('☺'), local('Sitka Display'),
+    url('/fonts/SitkaVF.ttf') format('truetype');
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: clock-font;
-  src: local("☺"),local("Sitka Display"),url("/fonts/SitkaVF.ttf") format("truetype");
+  src: local('☺'), local('Sitka Display'),
+    url('/fonts/SitkaVF.ttf') format('truetype');
   font-weight: bolder;
   font-display: swap;
 }
 
 :root {
   --background-color: #111;
+  --color: #186fd3;
 }
 
 body {
@@ -39,7 +42,7 @@ body {
 .main-container * {
   font-family: clock-font;
   font-size: 17vw;
-  color: rgb(24, 111, 211);
+  color: var(--color);
   font-variant-numeric: tabular-nums;
 }
 
@@ -49,4 +52,36 @@ body {
 
 .separator {
   font-size: 14vw;
+}
+
+.tools {
+  display: grid;
+  grid-auto-flow: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+  opacity: 0.7;
+}
+
+button {
+  background: rgb(19, 44, 119);
+  color: skyblue;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.tools-first {
+  justify-self: flex-start;
+}
+
+.tools-last {
+  justify-self: flex-end;
+}
+
+a {
+  color: var(--color);
 }
