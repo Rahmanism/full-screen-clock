@@ -1,0 +1,52 @@
+@font-face {
+  font-family: clock-font;
+  src: local("☺"),local("Sitka Display"),url("/fonts/SitkaVF.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: clock-font;
+  src: local("☺"),local("Sitka Display"),url("/fonts/SitkaVF.ttf") format("truetype");
+  font-weight: bolder;
+  font-display: swap;
+}
+
+:root {
+  --background-color: #111;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  height: 100svh;
+  background-color: var(--background-color);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container * {
+  font-family: clock-font;
+  font-size: 17vw;
+  color: rgb(24, 111, 211);
+  font-variant-numeric: tabular-nums;
+}
+
+.hour {
+  font-weight: bold;
+}
+
+.separator {
+  font-size: 14vw;
+}
